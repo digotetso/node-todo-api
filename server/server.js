@@ -8,6 +8,7 @@ var {Todo} = require('./model/todos');
 var {User} = require('./model/users');
 
 var app = express();
+var port = process.env.PORT || 3000
 
 app.use(bodyParser.json())
 //get request
@@ -90,8 +91,8 @@ app.get('/todo/:id', (req, res) => {
 
 
 
-app.listen(3000, () =>{
-    console.log('Server listening on page 3000')
+app.listen(port, () =>{
+    console.log(`Server listening on page ${port}`)
 }
 )
 
