@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js" // tell heroku how to start the app
+    "start": "node server/server.js" 
   },
-  "engine": {
-    "node": "v9.2.1"   //tell heroku to use this node version
+  "engines": {
+    "node": "v9.2.1"   
   },
 
   "author": "",
